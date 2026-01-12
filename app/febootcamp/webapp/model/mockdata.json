@@ -1,14 +1,16 @@
 {
-  "chartData": [
-    { "Month": "Jan", "Value": 1800 },
-    { "Month": "Feb", "Value": 200 },
-    { "Month": "Mar", "Value": 300 },
-    { "Month": "Apr", "Value": 250 },
-    { "Month": "May", "Value": 400 }
-  ],
-  "items": [
-    { "name": "Item 1" },
-    { "name": "Item 2" },
-    { "name": "Item 3" }
+  "createdData": [
+    {"month": "Jan", "created": 100},
+    {"month": "Feb", "created": 200},
+    {"month": "Mar", "created": 150},
+    {"month": "Apr", "created": 250},
+    {"month": "May", "created": 300},
+    {"month": "Jun", "created": 120},
+    {"month": "Jul", "created": 400},
+    {"month": "Aug", "created": 500},
+    {"month": "Sep", "created": 600},
+    {"month": "Oct", "created": 700},
+    {"month": "Nov", "created": 800},
+    {"month": "Dec", "created": 900}
   ]
 }

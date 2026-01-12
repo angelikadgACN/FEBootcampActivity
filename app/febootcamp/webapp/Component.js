@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-  "sap/ui/model/json/JSONModel",
+    "sap/ui/model/json/JSONModel",
     "febootcamp/model/models"
 ], (UIComponent, JSONModel, models) => {
     "use strict";
@@ -21,10 +21,10 @@ sap.ui.define([
             
             this.setModel(models.createDeviceModel(), "device");
             
-            // Mock data model
-            var oMockModel = new JSONModel();
-            oMockModel.loadData("model/mockdata.json");
-            this.setModel(oMockModel, "mock");
+            // Mockdata model
+           // var oMockModel = new JSONModel();
+          //  oMockModel.loadData("model/mockdata.json");
+           // this.setModel(oMockModel, "mock");
 
             // enable routing
             this.getRouter().initialize();

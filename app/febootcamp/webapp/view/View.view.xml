@@ -18,23 +18,34 @@
             </OverflowToolbar>
         </headerToolbar>
         <content>
-            <viz:VizFrame id="idVizFrame" height="300px" vizType="column">
-
+            <viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+                height='100%' width="100%" vizType='column'>
                 <viz:dataset>
-                    <viz.data:FlattenedDataset id="_IDGenFlattenedDataset1" data="{mock>/chartData}">
+                    <viz.data:FlattenedDataset id="_IDGenFlattenedDataset1" data="{/createdData}">
                         <viz.data:dimensions>
-                            <viz.data:DimensionDefinition id="_IDGenDimensionDefinition" name="Month" value="{mock>Month}"/>
+                            <viz.data:DimensionDefinition id="_IDGenDimensionDefinition" name="Month"
+                                value="{month}" />
                         </viz.data:dimensions>
                         <viz.data:measures>
-                            <viz.data:MeasureDefinition id="_IDGenMeasureDefinition" name="Created Data" value="{mock>Value}"/>
+                            <viz.data:MeasureDefinition id="_IDGenMeasureDefinition" name="Created Data"
+                                value="{created}" />
                         </viz.data:measures>
                     </viz.data:FlattenedDataset>
                 </viz:dataset>
 
+                <viz:feeds>
+                    <viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
+                        values="created" />
+                    <viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
+                        values="month" />
+                </viz:feeds>
+                <viz:dependents>
+                    <viz:Popover id="idPopOver"></viz:Popover>
+                </viz:dependents>
             </viz:VizFrame>
 
-            <List id="_IDGenList" headerText="List" items="{mock>/items}">
-                <StandardListItem id="_IDGenStandardListItem" title="{mock>name}"/>
+            <List id="_IDGenList" headerText="List" items="{/items}">
+                <StandardListItem id="_IDGenStandardListItem" title="{name}"/>
             </List>
 
             <Link id="_IDGenLink" text="Click here to go to Page 2!" press="onNavToPage2"/>
