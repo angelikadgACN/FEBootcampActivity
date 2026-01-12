@@ -1,0 +1,14 @@
+{
+  "chartData": [
+    { "Month": "Jan", "Value": 1800 },
+    { "Month": "Feb", "Value": 200 },
+    { "Month": "Mar", "Value": 300 },
+    { "Month": "Apr", "Value": 250 },
+    { "Month": "May", "Value": 400 }
+  ],
+  "items": [
+    { "name": "Item 1" },
+    { "name": "Item 2" },
+    { "name": "Item 3" }
+  ]
+}

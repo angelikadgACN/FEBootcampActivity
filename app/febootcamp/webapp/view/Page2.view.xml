@@ -1,0 +1,16 @@
+<mvc:View
+  controllerName="febootcamp.controller.Page2"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+  <Page id="_IDGenPage1"
+    title="Fiori App"
+    showNavButton="true"
+    navButtonPress="onNavBack">
+
+    <content>
+      <Text id="_IDGenText" text="Welcome to Page 2!" class="sapUiLargeMargin"/>
+    </content>
+
+  </Page>
+</mvc:View>

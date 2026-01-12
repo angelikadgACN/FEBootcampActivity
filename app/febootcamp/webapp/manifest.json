@@ -84,10 +84,10 @@
         "routerClass": "sap.m.routing.Router",
         "controlAggregation": "pages",
         "controlId": "app",
-        "transition": "slide",
         "type": "View",
         "viewType": "XML",
         "path": "febootcamp.view",
+				"transition": "slide",
         "async": true,
         "viewPath": "febootcamp.view"
       },
@@ -98,12 +98,27 @@
           "target": [
             "TargetView"
           ]
+        },
+        {
+          "name": "RoutePage2",
+          "pattern": ":?query:",
+          "target": [ 
+            "TargetPage2"
+          ]
         }
       ],
       "targets": {
+
         "TargetView": {
           "id": "View",
-          "name": "View"
+          "name": "View",
+          "level" : 1
+        },
+
+        "TargetPage2": {
+          "id": "Page2",
+          "name": "Page2",
+          "level" : 2
         }
       }
     },
