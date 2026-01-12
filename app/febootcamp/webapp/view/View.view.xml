@@ -1,6 +1,9 @@
 <mvc:View controllerName="febootcamp.controller.View"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+	xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+	height="100%">
     <Page id="page" title="{i18n>title}">
+				<Button id="_IDGenButton" text="Hello, Angelika" press="onPress" />
     </Page>
 </mvc:View>

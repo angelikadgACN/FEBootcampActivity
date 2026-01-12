@@ -1,10 +1,16 @@
 sap.ui.define([
+    "sap/m/MessageToast",
     "sap/ui/core/mvc/Controller"
-], (Controller) => {
+], function(MessageToast, Controller) {
     "use strict";
 
-    return Controller.extend("febootcamp.controller.View", {
-        onInit() {
-        }
-    });
+    var PageController = Controller.extend("sap.m.sample.Button.Page", {
+
+		onPress: function (evt) {
+			MessageToast.show("This button is working, yey!");
+		}
+	});
+
+	return PageController;
+
 });
